@@ -63,9 +63,9 @@ namespace com.ravio.unitylearning.copytoclipboard
             {
                 GUIUtility.systemCopyBuffer = copyTextField.text;
             }
-            else if (button.GetComponent<TextMeshProUGUI>() != null)
+            else if (button.GetComponentInChildren<TextMeshProUGUI>() != null)
             {
-                GUIUtility.systemCopyBuffer = button.GetComponent<TextMeshProUGUI>().text;
+                GUIUtility.systemCopyBuffer = button.GetComponentInChildren<TextMeshProUGUI>().text;
             }
         }
 
